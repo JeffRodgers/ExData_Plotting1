@@ -8,7 +8,7 @@ png(filename = "plot2.png",
     width = 480, height = 480, units = "px", pointsize = 12,
     bg = "white",  res = NA, ,type = c("cairo"), antialias)
 
-#Create histogram
+#Create Plot
 myDate <- as.Date(mySubSet$Date,"%d/%m/%Y")
 dateTime <- paste(as.Date(mySubSet$Date,"%d/%m/%Y") ,mySubSet$Time)
 plot(as.POSIXct(dateTime),mySubSet$Global_active_power,
